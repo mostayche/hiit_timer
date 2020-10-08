@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_two"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/text_view_exercise_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:text="Temps d'effort"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar_exrecise_time_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_exercise_time"
+        android:layout_marginTop="15dp"
+        android:max="100"
+        android:progressBackgroundTintMode="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text_view_exercise_time_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar_exrecise_time_setup"
+        android:layout_marginTop="15sp"
+        android:text="Ilość secondes: "
+        android:textColor="@color/textColor"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_pause_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_exercise_time_screen"
+        android:layout_marginTop="20sp"
+        android:text="Temps de repos"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar_pause_time_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_pause_time"
+        android:layout_marginTop="15dp"
+        android:max="100"
+        android:progressBackgroundTintMode="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text_view_pause_time_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar_pause_time_setup"
+        android:layout_marginTop="15sp"
+        android:text="Ilość sekund: "
+        android:textColor="@color/textColor"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_repeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_pause_time_screen"
+        android:layout_marginTop="20sp"
+        android:text="Nombres de répétitions"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar_repeating_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_repeating"
+        android:layout_marginTop="15dp"
+        android:max="20"
+        android:progressBackgroundTintMode="@android:color/white" />
+
+    <TextView
+        android:id="@+id/text_view_repeating_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar_repeating_setup"
+        android:layout_marginTop="15sp"
+        android:text="Ilość powtórzeń: "
+        android:textColor="@color/textColor"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/option_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_repeating_screen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/button_approve_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="30dp"
+            android:text="Sauvegarder" />
+
+        <Button
+            android:id="@+id/button_cancel_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:text="ANNULER" />
+    </LinearLayout>
+
+
+</RelativeLayout>

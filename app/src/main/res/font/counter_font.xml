@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--suppress AndroidDomInspection -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/lcd2u"/>
+
+</font-family>

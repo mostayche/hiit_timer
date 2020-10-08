@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "46517938253",
+    "firebase_url": "https://hiit-timer-32e32.firebaseio.com",
+    "project_id": "hiit-timer-32e32",
+    "storage_bucket": "hiit-timer-32e32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46517938253:android:a3097ddac0cb4359599404",
+        "android_client_info": {
+          "package_name": "com.hiit.timer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46517938253-86uuscipeob5mksonasasag9q3niiq2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCubhwWMS9IyiCpvtIg-878T0-WK5wUUg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46517938253-86uuscipeob5mksonasasag9q3niiq2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

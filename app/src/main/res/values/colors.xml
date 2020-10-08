@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EB23AD62</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="menuColor">#000000</color>
+    <color name="textColor">#E7E0E0</color>
+    <color name="transparent_gray">#17060D2B</color>
+    <color name="calendar_red">#E9F30707</color>
+    <color name="calendar_cell_color">#7C0F0F0F</color>
+</resources>
