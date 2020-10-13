@@ -4,6 +4,8 @@ package com.hiit.timer;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.fragment.app.Fragment;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -47,12 +49,17 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.nav_calendar:
                             selectedFragment = new CalendarFragment();
                             break;
+
+                        case R.id.nav_exercices:
+                           selectedFragment = new ExercicesFragment();
+                            break;
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
                     return true;
                 }
+
             };
 
 

@@ -3,6 +3,7 @@ package com.hiit.timer;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import androidx.annotation.NonNull;
@@ -29,6 +30,7 @@ public class StartFragment extends Fragment {
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliseconds, exerciseTime, pauseTime;
     private int exerciseCounter;
+    private MediaPlayer player;
 
     private boolean isExercisePaused, isExerciseRestarted;
     int counter;
@@ -80,6 +82,8 @@ public class StartFragment extends Fragment {
             public void onClick(View v) {
                 if (isExercisePaused = true) {
                     isExercisePaused = false;
+                    player = MediaPlayer.create(getContext(), R.raw.cloche);
+                    player.start();
                     startExercise();
                 } else {
                     isExerciseRestarted = false;
@@ -140,6 +144,8 @@ public class StartFragment extends Fragment {
             setTextViewText(howManyExercises, "");
             exerciseCounter = optionList.get(2);
             exercise = true;
+            player = MediaPlayer.create(getContext(), R.raw.applause_2);
+            player.start();
             Toast.makeText(StartFragment.super.getContext(), "Exercice terminé", Toast.LENGTH_SHORT).show();
             startButton.setEnabled(true);
             addExerciseToEventsDB();

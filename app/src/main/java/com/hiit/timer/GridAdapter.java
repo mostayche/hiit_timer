@@ -1,12 +1,10 @@
 package com.hiit.timer;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -81,20 +79,6 @@ public class GridAdapter extends ArrayAdapter {
                 }
             }
         }
-
-        Button date_button = (Button) view.findViewById(R.id.date_button);
-
-        final String dateCourante =  String.valueOf(displayDay);
-
-        date_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ActivityDay.class);
-                intent.putExtra("nbeEvent", dateCourante); //Optional parameters
-                v.getContext().startActivity(intent);
-                //Toast.makeText(getContext(), "CA MARCHE", Toast.LENGTH_LONG).show();
-            }
-        });
 
         return view;
     }

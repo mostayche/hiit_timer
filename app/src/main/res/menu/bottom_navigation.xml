@@ -20,4 +20,9 @@
         android:icon="@drawable/ic_today_black_24dp"
         android:title="Calendrier" />
 
+    <item
+        android:id="@+id/nav_exercices"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="Exercices" />
+
 </menu>
