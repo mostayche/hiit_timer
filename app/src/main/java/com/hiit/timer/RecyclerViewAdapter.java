@@ -61,7 +61,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     DataModel dataModel = dataModelArrayList.get(getAdapterPosition());
 
                     showPopup(dataModel);
-
 /*                    Toast.makeText(itemView.getContext(),"Element " + getAdapterPosition() + " clicked", Toast.LENGTH_SHORT).show();
                     Log.d("hello", "Element " + getAdapterPosition() + " clicked.");*/
                 }
