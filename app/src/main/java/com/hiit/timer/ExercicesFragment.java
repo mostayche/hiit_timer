@@ -58,7 +58,7 @@ public class ExercicesFragment extends Fragment {
 
         dataModelArrayList = new ArrayList<>();
 
-        showSimpleProgressDialog(ExercicesFragment.this, "Fetching Json", "Récupération des données", false);
+        showSimpleProgressDialog(ExercicesFragment.this, "Connexion au serveur", "Récupération des données", false);
 
         db.collection("exercices")
                 .get()

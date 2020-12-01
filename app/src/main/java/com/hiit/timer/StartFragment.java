@@ -108,6 +108,8 @@ public class StartFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 isExerciseRestarted = true;
+                timeLeftInMilliseconds = optionList.get(0) * 1000;
+                updateCounterView();
             }
         });
     }
